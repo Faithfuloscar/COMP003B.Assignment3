@@ -26,6 +26,7 @@ namespace COMP003B.Assignment3
 
             app.UseAuthorization();
 
+            // TODO: modify controller route to default to StudentsController
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Students}/{action=Index}/{id?}");
